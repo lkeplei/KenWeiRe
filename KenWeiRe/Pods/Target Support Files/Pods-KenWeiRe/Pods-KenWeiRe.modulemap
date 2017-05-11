@@ -1,0 +1,6 @@
+framework module Pods_KenWeiRe {
+  umbrella header "Pods-KenWeiRe-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEC266F81EC459D300F60B57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266CB1EC459D300F60B57 /* AppDelegate.swift */; };
+		BEC266F91EC459D300F60B57 /* KenHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266D21EC459D300F60B57 /* KenHomeVC.swift */; };
+		BEC266FA1EC459D300F60B57 /* KenTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266D31EC459D300F60B57 /* KenTabbarVC.swift */; };
+		BEC266FB1EC459D300F60B57 /* KenLoginDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266D61EC459D300F60B57 /* KenLoginDM.swift */; };
+		BEC266FC1EC459D400F60B57 /* KenLoginS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266D91EC459D300F60B57 /* KenLoginS.swift */; };
+		BEC266FD1EC459D400F60B57 /* KenLaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266DB1EC459D300F60B57 /* KenLaunchVC.swift */; };
+		BEC266FE1EC459D400F60B57 /* KenLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266DC1EC459D300F60B57 /* KenLoginVC.swift */; };
+		BEC266FF1EC459D400F60B57 /* KenMineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266E21EC459D300F60B57 /* KenMineVC.swift */; };
+		BEC267001EC459D400F60B57 /* KenColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266E51EC459D300F60B57 /* KenColor.swift */; };
+		BEC267011EC459D400F60B57 /* KenDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266E61EC459D300F60B57 /* KenDevice.swift */; };
+		BEC267021EC459D400F60B57 /* KenString.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266E71EC459D300F60B57 /* KenString.swift */; };
+		BEC267031EC459D400F60B57 /* KenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266E81EC459D300F60B57 /* KenView.swift */; };
+		BEC267041EC459D400F60B57 /* KenConfigConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266E91EC459D300F60B57 /* KenConfigConst.swift */; };
+		BEC267051EC459D400F60B57 /* KenBaseCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266ED1EC459D300F60B57 /* KenBaseCategoryVC.swift */; };
+		BEC267061EC459D400F60B57 /* KenBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266EF1EC459D300F60B57 /* KenBaseModel.swift */; };
+		BEC267071EC459D400F60B57 /* KenAFHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266F11EC459D300F60B57 /* KenAFHttp.swift */; };
+		BEC267081EC459D400F60B57 /* KenNavgationBarV.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266F31EC459D300F60B57 /* KenNavgationBarV.swift */; };
+		BEC267091EC459D400F60B57 /* KenTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266F41EC459D300F60B57 /* KenTabBar.swift */; };
+		BEC2670A1EC459D400F60B57 /* KenTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266F51EC459D300F60B57 /* KenTabBarButton.swift */; };
+		BEC2670B1EC459D400F60B57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC266F71EC459D300F60B57 /* Assets.xcassets */; };
+		BEC267141EC45B5600F60B57 /* KenFileManagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC267131EC45B5600F60B57 /* KenFileManagerVC.swift */; };
+		EFA30D7E24FFD4E8830A7F59 /* Pods_KenWeiRe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB278D0DFFA5675ADE369205 /* Pods_KenWeiRe.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C2E37CEF4CD2CAE5E448714 /* Pods-KenWeiRe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KenWeiRe.release.xcconfig"; path = "Pods/Target Support Files/Pods-KenWeiRe/Pods-KenWeiRe.release.xcconfig"; sourceTree = "<group>"; };
+		BEC266B51EC455FE00F60B57 /* KenWeiRe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KenWeiRe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEC266C41EC455FE00F60B57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEC266CB1EC459D300F60B57 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEC266D21EC459D300F60B57 /* KenHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenHomeVC.swift; sourceTree = "<group>"; };
+		BEC266D31EC459D300F60B57 /* KenTabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenTabbarVC.swift; sourceTree = "<group>"; };
+		BEC266D61EC459D300F60B57 /* KenLoginDM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenLoginDM.swift; sourceTree = "<group>"; };
+		BEC266D91EC459D300F60B57 /* KenLoginS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenLoginS.swift; sourceTree = "<group>"; };
+		BEC266DB1EC459D300F60B57 /* KenLaunchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenLaunchVC.swift; sourceTree = "<group>"; };
+		BEC266DC1EC459D300F60B57 /* KenLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenLoginVC.swift; sourceTree = "<group>"; };
+		BEC266E21EC459D300F60B57 /* KenMineVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenMineVC.swift; sourceTree = "<group>"; };
+		BEC266E51EC459D300F60B57 /* KenColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenColor.swift; sourceTree = "<group>"; };
+		BEC266E61EC459D300F60B57 /* KenDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenDevice.swift; sourceTree = "<group>"; };
+		BEC266E71EC459D300F60B57 /* KenString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenString.swift; sourceTree = "<group>"; };
+		BEC266E81EC459D300F60B57 /* KenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenView.swift; sourceTree = "<group>"; };
+		BEC266E91EC459D300F60B57 /* KenConfigConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenConfigConst.swift; sourceTree = "<group>"; };
+		BEC266ED1EC459D300F60B57 /* KenBaseCategoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenBaseCategoryVC.swift; sourceTree = "<group>"; };
+		BEC266EF1EC459D300F60B57 /* KenBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenBaseModel.swift; sourceTree = "<group>"; };
+		BEC266F11EC459D300F60B57 /* KenAFHttp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenAFHttp.swift; sourceTree = "<group>"; };
+		BEC266F31EC459D300F60B57 /* KenNavgationBarV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenNavgationBarV.swift; sourceTree = "<group>"; };
+		BEC266F41EC459D300F60B57 /* KenTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenTabBar.swift; sourceTree = "<group>"; };
+		BEC266F51EC459D300F60B57 /* KenTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenTabBarButton.swift; sourceTree = "<group>"; };
+		BEC266F71EC459D300F60B57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEC267131EC45B5600F60B57 /* KenFileManagerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenFileManagerVC.swift; sourceTree = "<group>"; };
+		DE2D45315811EF7C410D7149 /* Pods-KenWeiRe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KenWeiRe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KenWeiRe/Pods-KenWeiRe.debug.xcconfig"; sourceTree = "<group>"; };
+		EB278D0DFFA5675ADE369205 /* Pods_KenWeiRe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KenWeiRe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEC266B21EC455FE00F60B57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFA30D7E24FFD4E8830A7F59 /* Pods_KenWeiRe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12985756CE57DA6F77F51A50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB278D0DFFA5675ADE369205 /* Pods_KenWeiRe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E8A910116A7648B5E614E69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE2D45315811EF7C410D7149 /* Pods-KenWeiRe.debug.xcconfig */,
+				4C2E37CEF4CD2CAE5E448714 /* Pods-KenWeiRe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BEC266AC1EC455FE00F60B57 = {
+			isa = PBXGroup;
+			children = (
+				BEC266B71EC455FE00F60B57 /* KenWeiRe */,
+				BEC266B61EC455FE00F60B57 /* Products */,
+				2E8A910116A7648B5E614E69 /* Pods */,
+				12985756CE57DA6F77F51A50 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BEC266B61EC455FE00F60B57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEC266B51EC455FE00F60B57 /* KenWeiRe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEC266B71EC455FE00F60B57 /* KenWeiRe */ = {
+			isa = PBXGroup;
+			children = (
+				BEC266CA1EC459D300F60B57 /* Classes */,
+				BEC266F61EC459D300F60B57 /* Resources */,
+				BEC266C41EC455FE00F60B57 /* Info.plist */,
+			);
+			path = KenWeiRe;
+			sourceTree = "<group>";
+		};
+		BEC266CA1EC459D300F60B57 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BEC266CB1EC459D300F60B57 /* AppDelegate.swift */,
+				BEC266E91EC459D300F60B57 /* KenConfigConst.swift */,
+				BEC266CC1EC459D300F60B57 /* Businesses */,
+				BEC266E31EC459D300F60B57 /* Custom */,
+				BEC266EA1EC459D300F60B57 /* Vendors */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BEC266CC1EC459D300F60B57 /* Businesses */ = {
+			isa = PBXGroup;
+			children = (
+				BEC266D31EC459D300F60B57 /* KenTabbarVC.swift */,
+				BEC2670C1EC45AE400F60B57 /* FileManager */,
+				BEC266CD1EC459D300F60B57 /* Home */,
+				BEC266D41EC459D300F60B57 /* Login */,
+				BEC266DD1EC459D300F60B57 /* Mine */,
+			);
+			path = Businesses;
+			sourceTree = "<group>";
+		};
+		BEC266CD1EC459D300F60B57 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BEC266CE1EC459D300F60B57 /* Model */,
+				BEC266CF1EC459D300F60B57 /* Resources */,
+				BEC266D01EC459D300F60B57 /* Service */,
+				BEC266D11EC459D300F60B57 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BEC266CE1EC459D300F60B57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BEC266CF1EC459D300F60B57 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BEC266D01EC459D300F60B57 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BEC266D11EC459D300F60B57 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BEC266D21EC459D300F60B57 /* KenHomeVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BEC266D41EC459D300F60B57 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BEC266D51EC459D300F60B57 /* Model */,
+				BEC266D71EC459D300F60B57 /* Resources */,
+				BEC266D81EC459D300F60B57 /* Service */,
+				BEC266DA1EC459D300F60B57 /* Views */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BEC266D51EC459D300F60B57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BEC266D61EC459D300F60B57 /* KenLoginDM.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BEC266D71EC459D300F60B57 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BEC266D81EC459D300F60B57 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BEC266D91EC459D300F60B57 /* KenLoginS.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BEC266DA1EC459D300F60B57 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BEC266DB1EC459D300F60B57 /* KenLaunchVC.swift */,
+				BEC266DC1EC459D300F60B57 /* KenLoginVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BEC266DD1EC459D300F60B57 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				BEC266DE1EC459D300F60B57 /* Model */,
+				BEC266DF1EC459D300F60B57 /* Resources */,
+				BEC266E01EC459D300F60B57 /* Service */,
+				BEC266E11EC459D300F60B57 /* Views */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		BEC266DE1EC459D300F60B57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BEC266DF1EC459D300F60B57 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BEC266E01EC459D300F60B57 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BEC266E11EC459D300F60B57 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BEC266E21EC459D300F60B57 /* KenMineVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BEC266E31EC459D300F60B57 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				BEC266E41EC459D300F60B57 /* Category */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		BEC266E41EC459D300F60B57 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BEC266E51EC459D300F60B57 /* KenColor.swift */,
+				BEC266E61EC459D300F60B57 /* KenDevice.swift */,
+				BEC266E71EC459D300F60B57 /* KenString.swift */,
+				BEC266E81EC459D300F60B57 /* KenView.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		BEC266EA1EC459D300F60B57 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				BEC266EB1EC459D300F60B57 /* KenUtility */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		BEC266EB1EC459D300F60B57 /* KenUtility */ = {
+			isa = PBXGroup;
+			children = (
+				BEC266EC1EC459D300F60B57 /* BaseCategory */,
+				BEC266EE1EC459D300F60B57 /* Model */,
+				BEC266F01EC459D300F60B57 /* Network */,
+				BEC266F21EC459D300F60B57 /* TabbarVC */,
+			);
+			path = KenUtility;
+			sourceTree = "<group>";
+		};
+		BEC266EC1EC459D300F60B57 /* BaseCategory */ = {
+			isa = PBXGroup;
+			children = (
+				BEC266ED1EC459D300F60B57 /* KenBaseCategoryVC.swift */,
+			);
+			path = BaseCategory;
+			sourceTree = "<group>";
+		};
+		BEC266EE1EC459D300F60B57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BEC266EF1EC459D300F60B57 /* KenBaseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BEC266F01EC459D300F60B57 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BEC266F11EC459D300F60B57 /* KenAFHttp.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BEC266F21EC459D300F60B57 /* TabbarVC */ = {
+			isa = PBXGroup;
+			children = (
+				BEC266F31EC459D300F60B57 /* KenNavgationBarV.swift */,
+				BEC266F41EC459D300F60B57 /* KenTabBar.swift */,
+				BEC266F51EC459D300F60B57 /* KenTabBarButton.swift */,
+			);
+			path = TabbarVC;
+			sourceTree = "<group>";
+		};
+		BEC266F61EC459D300F60B57 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BEC266F71EC459D300F60B57 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BEC2670C1EC45AE400F60B57 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				BEC2670D1EC45AE400F60B57 /* Model */,
+				BEC2670E1EC45AE400F60B57 /* Resources */,
+				BEC2670F1EC45AE400F60B57 /* Service */,
+				BEC267101EC45AE400F60B57 /* Views */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		BEC2670D1EC45AE400F60B57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BEC2670E1EC45AE400F60B57 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BEC2670F1EC45AE400F60B57 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BEC267101EC45AE400F60B57 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BEC267131EC45B5600F60B57 /* KenFileManagerVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEC266B41EC455FE00F60B57 /* KenWeiRe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEC266C71EC455FE00F60B57 /* Build configuration list for PBXNativeTarget "KenWeiRe" */;
+			buildPhases = (
+				7E164A4A85CC92E058475D85 /* [CP] Check Pods Manifest.lock */,
+				BEC266B11EC455FE00F60B57 /* Sources */,
+				BEC266B21EC455FE00F60B57 /* Frameworks */,
+				BEC266B31EC455FE00F60B57 /* Resources */,
+				0B3CC89EEC9C7DDEEA38F4DD /* [CP] Embed Pods Frameworks */,
+				84EEC32BFF061DF7BA77A6B4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KenWeiRe;
+			productName = KenWeiRe;
+			productReference = BEC266B51EC455FE00F60B57 /* KenWeiRe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEC266AD1EC455FE00F60B57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Ken.Liu;
+				TargetAttributes = {
+					BEC266B41EC455FE00F60B57 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2C9LC53822;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BEC266B01EC455FE00F60B57 /* Build configuration list for PBXProject "KenWeiRe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEC266AC1EC455FE00F60B57;
+			productRefGroup = BEC266B61EC455FE00F60B57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEC266B41EC455FE00F60B57 /* KenWeiRe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEC266B31EC455FE00F60B57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC2670B1EC459D400F60B57 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B3CC89EEC9C7DDEEA38F4DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KenWeiRe/Pods-KenWeiRe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E164A4A85CC92E058475D85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		84EEC32BFF061DF7BA77A6B4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KenWeiRe/Pods-KenWeiRe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEC266B11EC455FE00F60B57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC266FD1EC459D400F60B57 /* KenLaunchVC.swift in Sources */,
+				BEC267031EC459D400F60B57 /* KenView.swift in Sources */,
+				BEC267051EC459D400F60B57 /* KenBaseCategoryVC.swift in Sources */,
+				BEC267141EC45B5600F60B57 /* KenFileManagerVC.swift in Sources */,
+				BEC267021EC459D400F60B57 /* KenString.swift in Sources */,
+				BEC266F91EC459D300F60B57 /* KenHomeVC.swift in Sources */,
+				BEC267011EC459D400F60B57 /* KenDevice.swift in Sources */,
+				BEC266FF1EC459D400F60B57 /* KenMineVC.swift in Sources */,
+				BEC2670A1EC459D400F60B57 /* KenTabBarButton.swift in Sources */,
+				BEC266FE1EC459D400F60B57 /* KenLoginVC.swift in Sources */,
+				BEC267041EC459D400F60B57 /* KenConfigConst.swift in Sources */,
+				BEC267061EC459D400F60B57 /* KenBaseModel.swift in Sources */,
+				BEC266F81EC459D300F60B57 /* AppDelegate.swift in Sources */,
+				BEC266FA1EC459D300F60B57 /* KenTabbarVC.swift in Sources */,
+				BEC266FC1EC459D400F60B57 /* KenLoginS.swift in Sources */,
+				BEC267001EC459D400F60B57 /* KenColor.swift in Sources */,
+				BEC267091EC459D400F60B57 /* KenTabBar.swift in Sources */,
+				BEC266FB1EC459D300F60B57 /* KenLoginDM.swift in Sources */,
+				BEC267071EC459D400F60B57 /* KenAFHttp.swift in Sources */,
+				BEC267081EC459D400F60B57 /* KenNavgationBarV.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BEC266C51EC455FE00F60B57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEC266C61EC455FE00F60B57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEC266C81EC455FE00F60B57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE2D45315811EF7C410D7149 /* Pods-KenWeiRe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 2C9LC53822;
+				INFOPLIST_FILE = KenWeiRe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ken.KenWeiRe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BEC266C91EC455FE00F60B57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C2E37CEF4CD2CAE5E448714 /* Pods-KenWeiRe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 2C9LC53822;
+				INFOPLIST_FILE = KenWeiRe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ken.KenWeiRe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEC266B01EC455FE00F60B57 /* Build configuration list for PBXProject "KenWeiRe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEC266C51EC455FE00F60B57 /* Debug */,
+				BEC266C61EC455FE00F60B57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEC266C71EC455FE00F60B57 /* Build configuration list for PBXNativeTarget "KenWeiRe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEC266C81EC455FE00F60B57 /* Debug */,
+				BEC266C91EC455FE00F60B57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEC266AD1EC455FE00F60B57 /* Project object */;
+}

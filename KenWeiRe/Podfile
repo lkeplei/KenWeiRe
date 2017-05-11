@@ -1,0 +1,14 @@
+platform:ios, '8.0'
+inhibit_all_warnings!
+
+target 'KenWeiRe' do
+
+    pod 'AFNetworking'
+    pod 'MJRefresh'
+    pod 'SDWebImage'
+    pod 'SVProgressHUD'
+
+    use_frameworks!
+
+    pod 'HandyJSON', '~> 1.7.1'
+end
