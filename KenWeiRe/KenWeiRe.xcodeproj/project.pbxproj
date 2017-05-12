@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE86A8E41EC5972C00705205 /* KenAboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86A8E31EC5972C00705205 /* KenAboutVC.swift */; };
+		BE86A8E61EC5BD1800705205 /* KenBaseNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86A8E51EC5BD1800705205 /* KenBaseNavVC.swift */; };
 		BEC266F81EC459D300F60B57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266CB1EC459D300F60B57 /* AppDelegate.swift */; };
 		BEC266F91EC459D300F60B57 /* KenHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266D21EC459D300F60B57 /* KenHomeVC.swift */; };
 		BEC266FA1EC459D300F60B57 /* KenTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266D31EC459D300F60B57 /* KenTabbarVC.swift */; };
@@ -28,11 +30,15 @@
 		BEC2670A1EC459D400F60B57 /* KenTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266F51EC459D300F60B57 /* KenTabBarButton.swift */; };
 		BEC2670B1EC459D400F60B57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC266F71EC459D300F60B57 /* Assets.xcassets */; };
 		BEC267141EC45B5600F60B57 /* KenFileManagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC267131EC45B5600F60B57 /* KenFileManagerVC.swift */; };
+		BEC267161EC5549100F60B57 /* Mine.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC267151EC5549100F60B57 /* Mine.xcassets */; };
+		BEC267181EC5676200F60B57 /* KenArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC267171EC5676200F60B57 /* KenArray.swift */; };
 		EFA30D7E24FFD4E8830A7F59 /* Pods_KenWeiRe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB278D0DFFA5675ADE369205 /* Pods_KenWeiRe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C2E37CEF4CD2CAE5E448714 /* Pods-KenWeiRe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KenWeiRe.release.xcconfig"; path = "Pods/Target Support Files/Pods-KenWeiRe/Pods-KenWeiRe.release.xcconfig"; sourceTree = "<group>"; };
+		BE86A8E31EC5972C00705205 /* KenAboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenAboutVC.swift; sourceTree = "<group>"; };
+		BE86A8E51EC5BD1800705205 /* KenBaseNavVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenBaseNavVC.swift; sourceTree = "<group>"; };
 		BEC266B51EC455FE00F60B57 /* KenWeiRe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KenWeiRe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC266C41EC455FE00F60B57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEC266CB1EC459D300F60B57 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +62,8 @@
 		BEC266F51EC459D300F60B57 /* KenTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenTabBarButton.swift; sourceTree = "<group>"; };
 		BEC266F71EC459D300F60B57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEC267131EC45B5600F60B57 /* KenFileManagerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenFileManagerVC.swift; sourceTree = "<group>"; };
+		BEC267151EC5549100F60B57 /* Mine.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Mine.xcassets; sourceTree = "<group>"; };
+		BEC267171EC5676200F60B57 /* KenArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenArray.swift; sourceTree = "<group>"; };
 		DE2D45315811EF7C410D7149 /* Pods-KenWeiRe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KenWeiRe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KenWeiRe/Pods-KenWeiRe.debug.xcconfig"; sourceTree = "<group>"; };
 		EB278D0DFFA5675ADE369205 /* Pods_KenWeiRe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KenWeiRe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -245,6 +253,7 @@
 		BEC266DF1EC459D300F60B57 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BEC267151EC5549100F60B57 /* Mine.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -260,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				BEC266E21EC459D300F60B57 /* KenMineVC.swift */,
+				BE86A8E31EC5972C00705205 /* KenAboutVC.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -279,6 +289,7 @@
 				BEC266E61EC459D300F60B57 /* KenDevice.swift */,
 				BEC266E71EC459D300F60B57 /* KenString.swift */,
 				BEC266E81EC459D300F60B57 /* KenView.swift */,
+				BEC267171EC5676200F60B57 /* KenArray.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -306,6 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				BEC266ED1EC459D300F60B57 /* KenBaseCategoryVC.swift */,
+				BE86A8E51EC5BD1800705205 /* KenBaseNavVC.swift */,
 			);
 			path = BaseCategory;
 			sourceTree = "<group>";
@@ -447,6 +459,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEC267161EC5549100F60B57 /* Mine.xcassets in Resources */,
 				BEC2670B1EC459D400F60B57 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,11 +526,14 @@
 				BEC267021EC459D400F60B57 /* KenString.swift in Sources */,
 				BEC266F91EC459D300F60B57 /* KenHomeVC.swift in Sources */,
 				BEC267011EC459D400F60B57 /* KenDevice.swift in Sources */,
+				BE86A8E61EC5BD1800705205 /* KenBaseNavVC.swift in Sources */,
+				BE86A8E41EC5972C00705205 /* KenAboutVC.swift in Sources */,
 				BEC266FF1EC459D400F60B57 /* KenMineVC.swift in Sources */,
 				BEC2670A1EC459D400F60B57 /* KenTabBarButton.swift in Sources */,
 				BEC266FE1EC459D400F60B57 /* KenLoginVC.swift in Sources */,
 				BEC267041EC459D400F60B57 /* KenConfigConst.swift in Sources */,
 				BEC267061EC459D400F60B57 /* KenBaseModel.swift in Sources */,
+				BEC267181EC5676200F60B57 /* KenArray.swift in Sources */,
 				BEC266F81EC459D300F60B57 /* AppDelegate.swift in Sources */,
 				BEC266FA1EC459D300F60B57 /* KenTabbarVC.swift in Sources */,
 				BEC266FC1EC459D400F60B57 /* KenLoginS.swift in Sources */,

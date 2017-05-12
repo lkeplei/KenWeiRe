@@ -20,7 +20,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.rootViewController = KenLaunchVC()
         self.window!.makeKeyAndVisible()
         
+        //hook
+        swizzlingMethod(clzz: UIViewController.self, oldSelector: #selector(UIViewController.viewDidLoad),
+                        newSelector: #selector(UIViewController.kenViewDidload))
+        swizzlingMethod(clzz: UINavigationController.self, oldSelector: #selector(UINavigationController.pushViewController(_:animated:)),
+                        newSelector: #selector(UINavigationController.kenPushViewController(_:animated:)))
+        
         return true
+    }
+    
+    func swizzlingMethod(clzz: AnyClass, oldSelector: Selector, newSelector: Selector) {
+        let oldMethod = class_getInstanceMethod(clzz, oldSelector)
+        let newMethod = class_getInstanceMethod(clzz, newSelector)
+        method_exchangeImplementations(oldMethod, newMethod)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

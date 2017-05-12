@@ -7,8 +7,10 @@ target 'KenWeiRe' do
     pod 'MJRefresh'
     pod 'SDWebImage'
     pod 'SVProgressHUD'
+    pod 'RealmSwift'
 
     use_frameworks!
 
     pod 'HandyJSON', '~> 1.7.1'
+    pod 'SnapKit'
 end
