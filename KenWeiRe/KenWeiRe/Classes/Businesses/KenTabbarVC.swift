@@ -60,7 +60,7 @@ class KenTabbarVC: UITabBarController {
         viewController.tabBarItem.selectedImage = UIImage(named: selectedImage)?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
 
         self.addChildViewController(UINavigationController.init(rootViewController: viewController))
-        viewController.setNavitemTitle(title: title)
+        viewController.setNavitemTitle(title)
         
         tabbarVC.addCustomButtonWithitem(viewController.tabBarItem)
     }

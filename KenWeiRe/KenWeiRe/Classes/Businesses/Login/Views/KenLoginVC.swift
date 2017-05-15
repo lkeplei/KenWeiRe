@@ -25,9 +25,7 @@ class KenLoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.appBackgroundColor
-        
-        self.view.addSubview(loginBtn)
+        self.contentView.addSubview(loginBtn)
     }
     
     func login() {

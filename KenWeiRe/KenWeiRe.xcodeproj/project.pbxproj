@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		BE86A8E41EC5972C00705205 /* KenAboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86A8E31EC5972C00705205 /* KenAboutVC.swift */; };
 		BE86A8E61EC5BD1800705205 /* KenBaseNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86A8E51EC5BD1800705205 /* KenBaseNavVC.swift */; };
+		BE86A8E81EC992F500705205 /* KenLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86A8E71EC992F500705205 /* KenLabel.swift */; };
+		BE86A8EA1EC9974F00705205 /* KenFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86A8E91EC9974F00705205 /* KenFont.swift */; };
+		BE86A8EC1EC99A3900705205 /* KenMailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86A8EB1EC99A3900705205 /* KenMailVC.swift */; };
 		BEC266F81EC459D300F60B57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266CB1EC459D300F60B57 /* AppDelegate.swift */; };
 		BEC266F91EC459D300F60B57 /* KenHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266D21EC459D300F60B57 /* KenHomeVC.swift */; };
 		BEC266FA1EC459D300F60B57 /* KenTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC266D31EC459D300F60B57 /* KenTabbarVC.swift */; };
@@ -39,6 +42,9 @@
 		4C2E37CEF4CD2CAE5E448714 /* Pods-KenWeiRe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KenWeiRe.release.xcconfig"; path = "Pods/Target Support Files/Pods-KenWeiRe/Pods-KenWeiRe.release.xcconfig"; sourceTree = "<group>"; };
 		BE86A8E31EC5972C00705205 /* KenAboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenAboutVC.swift; sourceTree = "<group>"; };
 		BE86A8E51EC5BD1800705205 /* KenBaseNavVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenBaseNavVC.swift; sourceTree = "<group>"; };
+		BE86A8E71EC992F500705205 /* KenLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenLabel.swift; sourceTree = "<group>"; };
+		BE86A8E91EC9974F00705205 /* KenFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenFont.swift; sourceTree = "<group>"; };
+		BE86A8EB1EC99A3900705205 /* KenMailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenMailVC.swift; sourceTree = "<group>"; };
 		BEC266B51EC455FE00F60B57 /* KenWeiRe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KenWeiRe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC266C41EC455FE00F60B57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEC266CB1EC459D300F60B57 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -235,19 +241,10 @@
 		BEC266DD1EC459D300F60B57 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				BEC266DE1EC459D300F60B57 /* Model */,
 				BEC266DF1EC459D300F60B57 /* Resources */,
-				BEC266E01EC459D300F60B57 /* Service */,
 				BEC266E11EC459D300F60B57 /* Views */,
 			);
 			path = Mine;
-			sourceTree = "<group>";
-		};
-		BEC266DE1EC459D300F60B57 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		BEC266DF1EC459D300F60B57 /* Resources */ = {
@@ -258,18 +255,12 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		BEC266E01EC459D300F60B57 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
 		BEC266E11EC459D300F60B57 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				BEC266E21EC459D300F60B57 /* KenMineVC.swift */,
 				BE86A8E31EC5972C00705205 /* KenAboutVC.swift */,
+				BE86A8EB1EC99A3900705205 /* KenMailVC.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -290,6 +281,8 @@
 				BEC266E71EC459D300F60B57 /* KenString.swift */,
 				BEC266E81EC459D300F60B57 /* KenView.swift */,
 				BEC267171EC5676200F60B57 /* KenArray.swift */,
+				BE86A8E71EC992F500705205 /* KenLabel.swift */,
+				BE86A8E91EC9974F00705205 /* KenFont.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -534,7 +527,10 @@
 				BEC267041EC459D400F60B57 /* KenConfigConst.swift in Sources */,
 				BEC267061EC459D400F60B57 /* KenBaseModel.swift in Sources */,
 				BEC267181EC5676200F60B57 /* KenArray.swift in Sources */,
+				BE86A8EA1EC9974F00705205 /* KenFont.swift in Sources */,
+				BE86A8E81EC992F500705205 /* KenLabel.swift in Sources */,
 				BEC266F81EC459D300F60B57 /* AppDelegate.swift in Sources */,
+				BE86A8EC1EC99A3900705205 /* KenMailVC.swift in Sources */,
 				BEC266FA1EC459D300F60B57 /* KenTabbarVC.swift in Sources */,
 				BEC266FC1EC459D400F60B57 /* KenLoginS.swift in Sources */,
 				BEC267001EC459D400F60B57 /* KenColor.swift in Sources */,

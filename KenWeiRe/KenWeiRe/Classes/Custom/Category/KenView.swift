@@ -73,7 +73,7 @@ extension UIView {
     //最大 y 坐点
     open var bottom: CGFloat {
         get {
-            return self.frame.origin.y
+            return self.frame.origin.y + self.height
         }
         set {
             self.height = newValue - self.top
