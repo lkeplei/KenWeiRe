@@ -25,12 +25,7 @@ extension UIViewController {
         self.kenViewDidload()
         
         self.automaticallyAdjustsScrollViewInsets = false           //关闭系统自动的下移功能(64)
-        
-        if ((self.navigationController?.viewControllers.count)! > 1) {
-            self.navigationItem.hidesBackButton = true
-            self.setLeftNavItemWithImg(image: UIImage(named: "ken_public_nav_back")!, selector: #selector(back))
-        }
-        
+
         self.contentView = UIView(frame: CGRect(x: 0, y: 64, width: self.view.width, height: self.view.height - 64))
         self.contentView?.backgroundColor = UIColor.appBackgroundColor
         [self.view.addSubview(contentView)];
@@ -68,6 +63,7 @@ extension UIViewController {
     open func pushViewC(_ viewController: UIViewController, animated: Bool) {
         if self.navigationController != nil {
             self.navigationController?.pushViewController(viewController, animated: animated)
+            viewController.setLeftNavItemWithImg(image: UIImage(named: "ken_public_nav_back")!, selector: #selector(back))
         }
     }
     

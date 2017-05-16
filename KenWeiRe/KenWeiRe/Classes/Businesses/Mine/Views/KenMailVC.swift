@@ -43,6 +43,7 @@ class KenMailVC: UIViewController ,UINavigationControllerDelegate, MFMailCompose
             self.present(controller, animated: true, completion: nil)
         } else {
             printLog("本设备不能发送邮件")
+            KenHUD.kenShowText(text: "本设备不能发送邮件")
         }
     }
     
