@@ -12,7 +12,7 @@ private var key: Void?
 
 extension UIViewController {
     
-    @IBInspectable var contentView: UIView! {
+    var contentView: UIView! {
         get {
             return objc_getAssociatedObject(self, &key) as? UIView
         }

@@ -9,7 +9,6 @@
 import UIKit
 
 extension UIView {
-    
     //视图宽
     open var width: CGFloat {
         get {
@@ -77,6 +76,31 @@ extension UIView {
         }
         set {
             self.height = newValue - self.top
+        }
+    }
+    
+    //添加点击能力
+    private static var clickGestureKey  = "tap_gesture_key"
+    private static var clickGestureActionKey  = "tap_gesture_action_key"
+    
+    public func click(_ action: (_ view: UIView) -> ()) {
+        var gesture = objc_getAssociatedObject(self, &UIView.clickGestureKey);
+        
+        if gesture == nil {
+            gesture = UITapGestureRecognizer(target: self, action: #selector(actionTapGesture(gesture:)))
+            
+            self.isUserInteractionEnabled = true
+            self.addGestureRecognizer(gesture as! UIGestureRecognizer)
+            objc_setAssociatedObject(self, &UIView.clickGestureKey, gesture, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+
+        objc_setAssociatedObject(self, &UIView.clickGestureActionKey, action, .OBJC_ASSOCIATION_COPY);
+    }
+    
+    func actionTapGesture(gesture: UITapGestureRecognizer) {
+        let action:(_ view: UIView) -> () = objc_getAssociatedObject(self, &UIView.clickGestureActionKey) as! (UIView) -> ();
+        if gesture.state == UIGestureRecognizerState.recognized {
+            action(self)
         }
     }
 }

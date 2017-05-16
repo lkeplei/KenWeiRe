@@ -113,6 +113,10 @@ class KenMineVC: UIViewController {
         editBtn.left = userV.width - editBtn.width - 10
         userV.addSubview(editBtn)
         
+        avatar.click { (view: UIView) in
+            
+        }
+        
         return headerV
     }
     
@@ -138,6 +142,11 @@ class KenMineVC: UIViewController {
             editBtn.setTitle("完成", for: .normal)
         }
     }
+}
+
+//选择照片
+extension KenMineVC {
+    
 }
 
 //MARK: - UITableViewDelegate,UITableViewDataSource
