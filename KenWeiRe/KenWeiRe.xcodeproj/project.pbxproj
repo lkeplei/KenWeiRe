@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BE1E6ACE1EC9B25F00E9324D /* KenInitialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E6ACD1EC9B25F00E9324D /* KenInitialize.swift */; };
 		BE1E6AD01EC9B3F300E9324D /* Custom.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE1E6ACF1EC9B3F300E9324D /* Custom.xcassets */; };
+		BE1E6AD21ECBE36B00E9324D /* KenAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E6AD11ECBE36B00E9324D /* KenAlertController.swift */; };
 		BE86A8E41EC5972C00705205 /* KenAboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86A8E31EC5972C00705205 /* KenAboutVC.swift */; };
 		BE86A8E61EC5BD1800705205 /* KenBaseNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86A8E51EC5BD1800705205 /* KenBaseNavVC.swift */; };
 		BE86A8E81EC992F500705205 /* KenLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86A8E71EC992F500705205 /* KenLabel.swift */; };
@@ -46,6 +47,7 @@
 		4C2E37CEF4CD2CAE5E448714 /* Pods-KenWeiRe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KenWeiRe.release.xcconfig"; path = "Pods/Target Support Files/Pods-KenWeiRe/Pods-KenWeiRe.release.xcconfig"; sourceTree = "<group>"; };
 		BE1E6ACD1EC9B25F00E9324D /* KenInitialize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenInitialize.swift; sourceTree = "<group>"; };
 		BE1E6ACF1EC9B3F300E9324D /* Custom.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Custom.xcassets; sourceTree = "<group>"; };
+		BE1E6AD11ECBE36B00E9324D /* KenAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenAlertController.swift; sourceTree = "<group>"; };
 		BE86A8E31EC5972C00705205 /* KenAboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenAboutVC.swift; sourceTree = "<group>"; };
 		BE86A8E51EC5BD1800705205 /* KenBaseNavVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenBaseNavVC.swift; sourceTree = "<group>"; };
 		BE86A8E71EC992F500705205 /* KenLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenLabel.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				BE86A8F11EC9A79700705205 /* KenHUD.swift */,
 				BE1E6ACD1EC9B25F00E9324D /* KenInitialize.swift */,
 				BE1E6ACF1EC9B3F300E9324D /* Custom.xcassets */,
+				BE1E6AD11ECBE36B00E9324D /* KenAlertController.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -555,6 +558,7 @@
 				BEC266FF1EC459D400F60B57 /* KenMineVC.swift in Sources */,
 				BEC2670A1EC459D400F60B57 /* KenTabBarButton.swift in Sources */,
 				BEC266FE1EC459D400F60B57 /* KenLoginVC.swift in Sources */,
+				BE1E6AD21ECBE36B00E9324D /* KenAlertController.swift in Sources */,
 				BEC267041EC459D400F60B57 /* KenConfigConst.swift in Sources */,
 				BEC267061EC459D400F60B57 /* KenBaseModel.swift in Sources */,
 				BEC267181EC5676200F60B57 /* KenArray.swift in Sources */,

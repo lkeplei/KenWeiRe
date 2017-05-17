@@ -49,6 +49,12 @@ class KenMineVC: UIViewController {
         return tableView
     }()
     
+    fileprivate lazy var avatarV: UIImageView = {
+        let avatarV = UIImageView(image: UIImage(named: "mine_add"))
+        avatarV.left = 15
+        return avatarV
+    }()
+    
     private let nameTextFeild: UITextField = {
         let nameTextFeild = UITextField(frame:CGRect(x: 100, y: 10, width: 200, height: 40))
         
@@ -97,13 +103,11 @@ class KenMineVC: UIViewController {
         userV.backgroundColor = UIColor.white
         headerV.addSubview(userV)
         
-        let avatar = UIImageView(image: UIImage(named: "mine_add"))
-        avatar.left = 15
-        avatar.center.y = userV.height / 2
-        userV.addSubview(avatar)
+        avatarV.center.y = userV.height / 2
+        userV.addSubview(avatarV)
         
         nameTextFeild.text = userInfo.name
-        nameTextFeild.left = avatar.right + 15
+        nameTextFeild.left = avatarV.right + 15
         descTextFeild.text = userInfo.desc
         descTextFeild.left = nameTextFeild.left
         
@@ -113,8 +117,8 @@ class KenMineVC: UIViewController {
         editBtn.left = userV.width - editBtn.width - 10
         userV.addSubview(editBtn)
         
-        avatar.click { (view: UIView) in
-            
+        avatarV.click { (view: UIView) in
+            selectPhoto()
         }
         
         return headerV
@@ -145,8 +149,29 @@ class KenMineVC: UIViewController {
 }
 
 //选择照片
-extension KenMineVC {
+extension KenMineVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    fileprivate func selectPhoto() {
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            let photoPicker =  UIImagePickerController()
+            photoPicker.delegate = self
+            photoPicker.sourceType = .photoLibrary
+            
+            self.present(photoPicker, animated: true, completion: nil)
+        }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        
+        //查看info对象
+        print(info)
+        
+        //显示的图片
+        let image:UIImage! = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        avatarV.image = image
+    }
 }
 
 //MARK: - UITableViewDelegate,UITableViewDataSource

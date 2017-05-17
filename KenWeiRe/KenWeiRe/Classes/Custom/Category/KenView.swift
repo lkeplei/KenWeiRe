@@ -80,8 +80,8 @@ extension UIView {
     }
     
     //添加点击能力
-    private static var clickGestureKey  = "tap_gesture_key"
-    private static var clickGestureActionKey  = "tap_gesture_action_key"
+    private static var clickGestureKey = "tap_gesture_key"
+    private static var clickGestureActionKey = "tap_gesture_action_key"
     
     public func click(_ action: (_ view: UIView) -> ()) {
         var gesture = objc_getAssociatedObject(self, &UIView.clickGestureKey);
