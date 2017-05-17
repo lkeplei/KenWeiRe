@@ -13,17 +13,17 @@ class KenMineVC: UIViewController {
     //使用默认的数据库
     let realm = try! Realm()
     
-    let userInfo: KenUserDM = {
-        let userInfo: KenUserDM
+    let userInfo: KenUserR = {
+        let userInfo: KenUserR
         
-        let userItems = try! Realm().objects(KenUserDM.self)
+        let userItems = try! Realm().objects(KenUserR.self)
         if userItems.count > 0 {
-            userInfo = KenUserDM()
+            userInfo = KenUserR()
             userInfo.userID = 0
             userInfo.name = userItems[0].name
             userInfo.desc = userItems[0].desc
         } else {
-            userInfo = KenUserDM()
+            userInfo = KenUserR()
             userInfo.userID = 0
             userInfo.name = "无名氏"
             userInfo.desc = "写点什么吧"

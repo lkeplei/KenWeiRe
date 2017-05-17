@@ -1,5 +1,5 @@
 //
-//  KenUserDM.swift
+//  KenUserR.swift
 //  KenWeiRe
 //
 //  Created by Ken.Liu on 2017/5/15.
@@ -9,10 +9,10 @@
 import Foundation
 import RealmSwift
 
-class KenUserDM : Object {
+class KenUserR : Object {
     dynamic var userID = 0
     dynamic var name = ""
-    dynamic var avatar = ""
+    dynamic var avatar: NSData? = nil
     dynamic var desc = ""
     
     override static func primaryKey() -> String? {
