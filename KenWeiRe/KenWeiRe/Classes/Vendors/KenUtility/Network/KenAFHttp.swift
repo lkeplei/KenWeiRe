@@ -26,7 +26,7 @@ class KenAFHttp {
         let value = "{\"system\" : \"iOS\"," +
                     "\"uuid\" : \"\(UIDevice.deviceUuid())\"," +
                     "\"sysVersion\" : \"\(UIDevice.current.systemVersion)\"," +
-                    "\"version\" : \"\(appVersion)\"," +
+                    "\"version\" : \"\(String(describing: appVersion))\"," +
                     "\"device\" : \"\(UIDevice.deviceModel())\"}"
         
         request.setValue(value, forHTTPHeaderField: "standardUA")

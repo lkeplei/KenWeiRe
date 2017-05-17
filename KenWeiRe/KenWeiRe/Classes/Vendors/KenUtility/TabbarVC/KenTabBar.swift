@@ -40,7 +40,7 @@ class KenTabBar: UIView {
             rotation.isRemovedOnCompletion = false
             rotation.repeatCount = MAXFLOAT
             rotation.keyPath = "transform.rotation.z"
-            rotation.toValue = (M_PI*2)
+            rotation.toValue = (Double.pi * 2)
             rotation.timingFunction = CAMediaTimingFunction.init(name: kCAMediaTimingFunctionLinear)
             self.selectedBtn.imageView?.layer.add(rotation, forKey: nil)
         }
@@ -95,7 +95,7 @@ class KenTabBar: UIView {
             rotation.isRemovedOnCompletion = false
             rotation.repeatCount = MAXFLOAT
             rotation.keyPath = "transform.rotation.z"
-            rotation.toValue = (M_PI*2)
+            rotation.toValue = (Double.pi * 2)
             rotation.timingFunction = CAMediaTimingFunction.init(name: kCAMediaTimingFunctionLinear)
             btn.imageView?.layer.add(rotation, forKey: nil)
             

@@ -17,7 +17,7 @@
     {
       "orientation" : "portrait",
       "idiom" : "iphone",
-      "filename" : "640*1134.png",
+      "filename" : "640*1336-1.png",
       "extent" : "full-screen",
       "subtype" : "retina4",
       "scale" : "2x"
@@ -60,7 +60,7 @@
       "extent" : "full-screen",
       "idiom" : "iphone",
       "subtype" : "retina4",
-      "filename" : "640*1134-1.png",
+      "filename" : "640*1336.png",
       "minimum-system-version" : "7.0",
       "orientation" : "portrait",
       "scale" : "2x"
