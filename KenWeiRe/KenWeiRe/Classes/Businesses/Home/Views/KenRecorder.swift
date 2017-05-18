@@ -8,13 +8,17 @@
 
 import UIKit
 import AVFoundation
+import RealmSwift
 
 class KenRecorder {
-    var recorder:AVAudioRecorder?               //录音器
-    var player:AVAudioPlayer?                   //播放器
-    var recorderSeetingsDic:[String : Any]?     //录音器设置参数数组
-    var volumeTimer:Timer!                      //定时器线程，循环监测录音的音量大小
-    var aacPath:String?                         //录音存储路径
+    var recorder: AVAudioRecorder?              //录音器
+    var player: AVAudioPlayer?                  //播放器
+    var recorderSeetingsDic: [String : Any]?    //录音器设置参数数组
+    var volumeTimer: Timer!                     //定时器线程，循环监测录音的音量大小
+    
+    //使用默认的数据库
+    let realm = try! Realm()
+    var fileR: KenFileR?                        //文件数据结构
     
     func initSession() {
         if recorderSeetingsDic == nil {
@@ -37,11 +41,7 @@ class KenRecorder {
             ]
         }
         
-        //获取Document目录
-        let docDir = NSSearchPathForDirectoriesInDomains(.documentDirectory,
-                                                         .userDomainMask, true)[0]
-        //组合录音文件路径
-        aacPath = docDir + "/play.aac"
+        createFileR()
     }
     
     func startRecorder() {
@@ -52,7 +52,7 @@ class KenRecorder {
         initSession()
         
         //初始化录音器
-        recorder = try! AVAudioRecorder(url: URL(string: aacPath!)!,
+        recorder = try! AVAudioRecorder(url: URL(string: (fileR?.path)!)!,
                                         settings: recorderSeetingsDic!)
         if recorder != nil {
             //开启仪表计数功能
@@ -69,18 +69,30 @@ class KenRecorder {
         recorder?.stop()
         //录音器释放
         recorder = nil
+        
+        //录音结束保存数据
+        if KenFileManager.fileExistsAtPath((fileR?.path)!) {
+            let audioPlayer = try! AVAudioPlayer(contentsOf: URL(string: (fileR?.path)!)!)
+            fileR?.duration = Int(audioPlayer.duration)
+
+            try! realm.write {
+                realm.add(fileR!, update: true)
+            }
+        } else {
+            printLog("录音失败")
+        }
     }
     
     func playRecorderFile(_ path: String = "") {
         var filePath = path
         if filePath.isEmpty {
-            filePath = aacPath!
+            filePath = (fileR?.path)!
         }
         //播放
-        player = try! AVAudioPlayer(contentsOf: URL(string: aacPath!)!)
+        player = try! AVAudioPlayer(contentsOf: URL(string: filePath)!)
         if player == nil {
             print("播放失败")
-        }else{
+        } else {
             player?.play()
         }
     }
@@ -100,5 +112,16 @@ class KenRecorder {
         let lowPassResult:Double = pow(Double(10), Double(0.05 * maxV))
         
         return lowPassResult
+    }
+    
+    private func createFileR() {
+        fileR = KenFileR()
+        fileR?.createTime = NSDate().toString(format: "yyy/MM/dd_HH-mm-ss")
+        
+        //获取Document目录
+        fileR?.path = KenFileManager.documentDirectory() + "/RecorderFile/" + (fileR?.createTime)! + ".aac"
+        
+        //创建文件目录
+        KenFileManager.createFolderWithPath((fileR?.path)!.subEndString(from: 15))
     }
 }

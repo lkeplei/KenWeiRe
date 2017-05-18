@@ -12,6 +12,8 @@
 		BE1E6AD21ECBE36B00E9324D /* KenAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E6AD11ECBE36B00E9324D /* KenAlertController.swift */; };
 		BE1E6AD61ECC28E600E9324D /* KenFileR.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E6AD51ECC28E500E9324D /* KenFileR.swift */; };
 		BE1E6AD81ECC462500E9324D /* KenRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E6AD71ECC462500E9324D /* KenRecorder.swift */; };
+		BE1E6ADC1ECD49CE00E9324D /* KenDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E6ADB1ECD49CE00E9324D /* KenDate.swift */; };
+		BE1E6ADE1ECD51BA00E9324D /* KenFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E6ADD1ECD51BA00E9324D /* KenFileManager.swift */; };
 		BE86A8E41EC5972C00705205 /* KenAboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86A8E31EC5972C00705205 /* KenAboutVC.swift */; };
 		BE86A8E61EC5BD1800705205 /* KenBaseNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86A8E51EC5BD1800705205 /* KenBaseNavVC.swift */; };
 		BE86A8E81EC992F500705205 /* KenLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86A8E71EC992F500705205 /* KenLabel.swift */; };
@@ -52,6 +54,8 @@
 		BE1E6AD11ECBE36B00E9324D /* KenAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenAlertController.swift; sourceTree = "<group>"; };
 		BE1E6AD51ECC28E500E9324D /* KenFileR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenFileR.swift; sourceTree = "<group>"; };
 		BE1E6AD71ECC462500E9324D /* KenRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenRecorder.swift; sourceTree = "<group>"; };
+		BE1E6ADB1ECD49CE00E9324D /* KenDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenDate.swift; sourceTree = "<group>"; };
+		BE1E6ADD1ECD51BA00E9324D /* KenFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenFileManager.swift; sourceTree = "<group>"; };
 		BE86A8E31EC5972C00705205 /* KenAboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenAboutVC.swift; sourceTree = "<group>"; };
 		BE86A8E51EC5BD1800705205 /* KenBaseNavVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenBaseNavVC.swift; sourceTree = "<group>"; };
 		BE86A8E71EC992F500705205 /* KenLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenLabel.swift; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 				BE1E6ACD1EC9B25F00E9324D /* KenInitialize.swift */,
 				BE1E6ACF1EC9B3F300E9324D /* Custom.xcassets */,
 				BE1E6AD11ECBE36B00E9324D /* KenAlertController.swift */,
+				BE1E6ADD1ECD51BA00E9324D /* KenFileManager.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -319,6 +324,7 @@
 				BEC267171EC5676200F60B57 /* KenArray.swift */,
 				BE86A8E71EC992F500705205 /* KenLabel.swift */,
 				BE86A8E91EC9974F00705205 /* KenFont.swift */,
+				BE1E6ADB1ECD49CE00E9324D /* KenDate.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -563,6 +569,7 @@
 				BE86A8E61EC5BD1800705205 /* KenBaseNavVC.swift in Sources */,
 				BE1E6ACE1EC9B25F00E9324D /* KenInitialize.swift in Sources */,
 				BE86A8E41EC5972C00705205 /* KenAboutVC.swift in Sources */,
+				BE1E6ADC1ECD49CE00E9324D /* KenDate.swift in Sources */,
 				BEC266FF1EC459D400F60B57 /* KenMineVC.swift in Sources */,
 				BEC2670A1EC459D400F60B57 /* KenTabBarButton.swift in Sources */,
 				BEC266FE1EC459D400F60B57 /* KenLoginVC.swift in Sources */,
@@ -571,6 +578,7 @@
 				BEC267061EC459D400F60B57 /* KenBaseModel.swift in Sources */,
 				BEC267181EC5676200F60B57 /* KenArray.swift in Sources */,
 				BE86A8EA1EC9974F00705205 /* KenFont.swift in Sources */,
+				BE1E6ADE1ECD51BA00E9324D /* KenFileManager.swift in Sources */,
 				BE86A8EF1EC9A43E00705205 /* KenUserR.swift in Sources */,
 				BE86A8E81EC992F500705205 /* KenLabel.swift in Sources */,
 				BEC266F81EC459D300F60B57 /* AppDelegate.swift in Sources */,
